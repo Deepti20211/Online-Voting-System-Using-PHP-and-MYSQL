@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <!-- Test Inline CSS -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff9933 33.33%, #ffffff 33.33% 66.66%, #138808 66.66%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* Increased the width */
+            padding: 40px; /* Increased the padding */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .form-content {
+            width: 100%;
+        }
+
+        header {
+            font-size: 28px; /* Increased the font size */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px; /* Increased the margin */
+        }
+
+        .field {
+            margin-bottom: 25px; /* Increased the margin */
+            width: 100%;
+        }
+
+        .input-field {
+            width: 100%;
+            position: relative; /* Added for eye icon positioning */
+        }
+
+        .input {
+            width: 100%;
+            padding: 15px; /* Increased the padding */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Added for consistent sizing */
+            font-size: 18px; /* Increased the font size */
+        }
+
+        .button-field {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px; /* Increased the padding */
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 18px; /* Increased the font size */
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px; /* Adjust as needed */
+            color: #555; /* Example color */
+        }
+    </style>
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Admin Login Form</header>
+                <form action="Adminlogin.php" method="post">
+                    <div class="field input-field">
+                        <input type="text" placeholder="Enter Username" class="input" name="username">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Enter Password" class="input" name="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Submit</button>
+                    </div><br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
